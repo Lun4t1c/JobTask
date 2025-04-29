@@ -1,4 +1,33 @@
 body {
 	color: wheat;
-	background-color: darkblue;
+	background-color: black;
+}
+
+.header {
+	height: 100px;
+	width: 100%;
+	background-color: red;
+}
+
+.big-div {
+	width: 100px;
+	height: 100px;
+}
+
+@media (max-width: 583px) {
+	.big-div {
+		background-color: blue;
+	}
+}
+
+@media (min-width: 584px) and (max-width: 899px) {
+	.big-div {
+		background-color: red;
+	}
+}
+
+@media (min-width: 900px) {
+	.big-div {
+		background-color: white;
+	}
 }
