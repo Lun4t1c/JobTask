@@ -1,31 +1,89 @@
 body {
-	color: wheat;
-	background-color: black;
+	background-color: green;
+
 }
 
 .header {
-	height: 100px;
+	height: 3rem;
 	width: 100%;
+
+	background-color: olive;
+	border: 2px solid black;
+}
+
+.section-1 {
+	width: fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	margin-left: 3rem;
+	gap: 0.2rem;
+
+	transform: rotate(45deg);
+}
+
+.red-square {
+	width: 5rem;
+	height: 5rem;
+	margin: 1rem;
+
 	background-color: red;
+	border: 2px solid black;
+}
+
+.section-2 {
+	width: fit-content;
+	height: fit-content;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 1rem;
+	align-items: center;
+}
+
+.line-div {
+	width: 10rem;
+	height: 1rem;
+
+	background-color: darkblue;
+	border: 2px solid black;
+}
+
+.circle-div {
+	width: 5rem;
+	height: 5rem;
+	grid-row: span 2;
+	border-radius: 50%;
+
+	background-color: cyan;
+	border: 2px solid black;
 }
 
 .big-div {
-	width: 100px;
-	height: 100px;
+	width: 10rem;
+	height: 15rem;
+
+	color: black;
+	border: 2px solid black;
+
+	text-align: center;
 }
 
+/* small */
 @media (max-width: 583px) {
 	.big-div {
 		background-color: blue;
 	}
 }
 
-@media (min-width: 584px) and (max-width: 899px) {
+/* medium */
+@media (min-width: 583px) and (max-width: 900px) {
 	.big-div {
 		background-color: red;
 	}
 }
 
+/* big */
 @media (min-width: 900px) {
 	.big-div {
 		background-color: white;
