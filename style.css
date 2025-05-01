@@ -64,11 +64,10 @@ body {
 	width: 10rem;
 	height: 20rem;
 	align-self: center;
+	text-align: center;
 
 	color: black;
 	border: 2px solid black;
-
-	text-align: center;
 
 	transition: background-color 0.3s ease-out;
 }
